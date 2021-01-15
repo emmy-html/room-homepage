@@ -77,9 +77,64 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* universal styles */
+body {
+  /* background: pink; */
+  font-family: "Spartan", sans-serif; }
+
+.content-wrapper {
+  margin: 0px 20px; }
+
+.fade-in {
+  animation: fadeIn 1s 1; }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+header {
+  margin-top: 50px;
+  /* create css class for the hamburger button */
+  /* hamburger close button */ }
+  header button.hamburger-button {
+    background-image: url("../images/icon-hamburger.svg");
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 14px;
+    z-index: 999; }
+  header button.close-button {
+    background-image: url("../images/icon-close.svg");
+    background-color: transparent;
+    border: none;
+    width: 16px;
+    height: 16px;
+    z-index: 999; }
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  header nav {
+    background: white;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px 0px;
+    width: 100%; }
+    header nav ul {
+      list-style-type: none;
+      padding: 0px 0px 0px 60px;
+      margin: 0px; }
+      header nav ul li {
+        display: inline-block;
+        margin-right: 20px; }
+        header nav ul li a:link,
+        header nav ul li a:visited {
+          font-size: .75rem;
+          text-decoration: none;
+          text-transform: lowercase; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -7,14 +7,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/main.scss" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Room homepage</title>
 
 </head>
-<body>
+<body class="fade-in">
   <header>
     <div class="content-wrapper">
-      <img src="#" alt="Room logo" />
-      <nav>
+      <button class="hamburger-button" id="menu-toggle-button" onclick="hamburger()">
+      </button>
+      <img src="images/logo.svg" alt="Room logo" />
+      <span class="filler">
+      </span>
+      <nav id="menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Shop</a></li>
@@ -22,7 +28,6 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <img src="#" alt="Menu open/close button" />
     </div>
   </header>
   <main>
@@ -74,5 +79,6 @@
       Coded by <a href="https://emery.studio">Emmy Jordan</a>.
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
